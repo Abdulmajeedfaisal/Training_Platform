@@ -1,0 +1,109 @@
+:root{
+    --main-color:#2980b9;
+    --orange:#f39c12;
+    --red:#eb2f06;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black:#333;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,0.1);
+    --border:.2rem solid rgba(0,0,0,.3);
+ }
+.search-form{
+   max-width: 50rem;
+   margin: 0 auto;
+   border-radius: .5rem;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+   padding:1.5rem 2rem;
+   display: flex;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+.search-form input{
+   width: 100%;
+   font-size: 1.8rem;
+   color: var(--black);
+}
+
+.search-form button{
+   background:none;
+   cursor: pointer;
+   color: var(--black);
+   font-size: 2rem;
+}
+
+.listings .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   align-items: flex-start;
+   justify-content: center;
+   gap: 1.5rem;
+}
+
+.listings .box-container .box{
+   border-radius: .5rem;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+   padding: 2rem;
+   overflow-x: hidden;
+}
+
+
+.listings .box-container .box .thumb{
+   position: relative;
+   height: 20rem;
+   margin-bottom: 1.5rem;
+}
+
+.listings .box-container .box .thumb p{
+   position: absolute;
+   top: 1rem; left: 1rem;
+   background-color: rgba(0,0,0,.5);
+   color: var(--white);
+   border-radius: .5rem;
+   padding:.7rem 1rem;
+   font-size: 1.8rem;
+}
+
+.listings .box-container .box .thumb p i{
+   margin-right: 1rem
+}
+
+.listings .box-container .box .thumb img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: .5rem;
+}
+
+.listings .box-container .box .price{
+   font-size: 1.8rem;
+   color: var(--red);
+}
+
+.listings .box-container .box .price i{
+   margin-right: .8rem;
+}
+
+.listings .box-container .box .name{
+   font-size: 2rem;
+   color: var(--black);
+   padding: .7rem 0;
+   text-overflow: ellipsis;
+}
+
+.listings .box-container .box .location{
+   color: var(--light-color);
+   font-size: 1.7rem;
+   padding: .5rem 0;
+   text-overflow: ellipsis;
+}
+
+.listings .box-container .box .location i{
+   margin-right: 1rem;
+   color: var(--red);
+}

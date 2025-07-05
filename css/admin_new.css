@@ -1,0 +1,8 @@
+@media (max-width:991px){
+
+    .header{
+       left: -32rem;
+       border-right: none;
+       transition: .2s linear;
+    }
+ }
